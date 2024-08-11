@@ -1,6 +1,6 @@
 {
   "name": "nuxt-cropper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Nuxt module for cropping",
   "keywords": [
     "vue",
@@ -30,6 +30,9 @@
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "docs:dev": "nuxi dev docs",
+    "docs:build": "nuxi generate docs",
+    "docs:types": "nuxi typecheck docs",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
@@ -51,5 +54,18 @@
     "typescript": "latest",
     "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "@typescript-eslint/utils>eslint": "^9.0.0"
+      },
+      "ignoreMissing": [
+        "webpack"
+      ]
+    }
+  },
+  "stackblitz": {
+    "startCommand": "pnpm run dev:prepare && pnpm run dev"
   }
 }

@@ -1,0 +1,39 @@
+title: 'Nuxt Cropper - Nuxt Module for Image Cropping'
+description: Integrate powerful image cropping capabilities into your Nuxt application with ease and flexibility.
+navigation: false
+hero:
+  title: 'Advanced Image Editing with <span class="text-primary-400">Cropper in Nuxt</span>'
+  description: 'Enhance your Nuxt applications with powerful image cropping features using Cropper. Easily manipulate, crop, and preview images, providing a smooth and intuitive user experience'
+  orientation: horizontal
+  headline:
+    label: Online Demo
+    to: https://nuxt-cropper.nuxt.dev
+    icon: i-heroicons-arrow-top-right-on-square-20-solid
+  links:
+    - label: Get started
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
+      to: '/getting-started/installation'
+      size: lg
+    - label: Open in GitHub
+      icon: i-simple-icons-github
+      size: lg
+      color: gray
+      to: https://github.com/ezequidias/nuxt-cropper
+      target: _blank
+  code: |
+    ```bash [Terminal]
+    npx nuxi module add cropper
+    ```
+features:
+  title: 'Features'
+  items:
+    - title: 'Multiple Drivers'
+      description: 'Supports multiple cropping libraries, allowing you to choose the best fit for your needs.'
+      icon: 'heroicons-solid:collection'
+    - title: 'Flexible Image Manipulation'
+      description: 'Comprehensive tools for cropping, resizing, and transforming images to fit any requirement.'
+      icon: 'heroicons-solid:photo'
+    - title: 'TypeScript Auto Imports'
+      description: 'Automatically import cropper utilities with full TypeScript support for type-safe configurations.'
+      icon: 'i-simple-icons-typescript'
